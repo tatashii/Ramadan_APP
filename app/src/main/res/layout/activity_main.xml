@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#12786F"
+    tools:context=".MainActivity"
+
+
+    >
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:background="@android:color/holo_red_dark"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ramadann"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintBottom_toTopOf="@id/lln"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="63dp"
+            android:background="#FFFFFF"
+
+
+            />
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="3dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="130dp"
+            android:background="#FFFFFF"
+
+
+            />
+
+
+        <View
+            android:id="@+id/v3"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="147dp"
+            android:background="#FFFFFF"
+
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lln"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_star"
+
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="30dp"
+            android:scaleType="center"
+            android:src="@drawable/ic_quarter" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_star" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="550dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_left"
+            app:layout_constraintStart_toStartOf="@id/ln"
+            app:layout_constraintTop_toTopOf="@id/ln" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_stop"
+            app:layout_constraintStart_toStartOf="@id/ln"
+            app:layout_constraintTop_toTopOf="@id/ln" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_right"
+            app:layout_constraintStart_toStartOf="@id/ln"
+            app:layout_constraintTop_toTopOf="@id/ln" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
